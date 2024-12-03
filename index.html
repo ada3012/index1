@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="icon" href="descarga.jpeg" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encuestas</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+
+    <main>
+        
+        <h1 class="wer">Encuestas Creadas:</h1>
+        <div class="encuestas">
+            
+        </div>
+        
+        <button class="agregar" id="btnAbrirModal">+</button>
+    </main>
+
+    <div class="modal" id="modal">
+        <div class="modal-content">
+            <span class="cerrar" id="btnCerrarModal">&times;</span>
+            <h2>Nueva Encuesta</h2>
+            <input type="text" id="nombreEncuesta" placeholder="Nombre de la encuesta">
+            <hr>
+            <div id="preguntasContainer"></div>
+            <button id="agregarPregunta">Agregar Pregunta</button>
+            <br>
+            <button id="guardarEncuesta refresh">Guardar Encuesta</button>
+            <h3>"recarga para ver la pregunta al volver editar"</h3>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
