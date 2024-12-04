@@ -1,0 +1,40 @@
+h1{
+    background-color: rgb(41, 167, 125);
+    justify-content:center;
+    align-items:center;
+}
+body{
+    background-color: rgb(5, 206, 159);
+}
+.admin{
+    font-size: 24px; 
+    padding: 15px 30px; 
+    background-color: #4CAF50;
+    color: rgb(61, 81, 255);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    justify-content: flex-end;
+    gap: 20px;
+    padding: 20px;
+    margin-right: 150px;
+    text-decoration: none;
+  }
+  .usuario{
+    font-size: 24px;
+    padding: 15px 30px; 
+    background-color: #4CAF50;
+    color: white;
+    border: none; 
+    border-radius: 5px;
+    cursor: pointer;
+    justify-content: flex-end;
+    text-decoration: none;
+  }
+  a{
+    text-decoration: none;
+    color: aliceblue;
+  }
+  p{
+    color: black;
+  }
