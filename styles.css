@@ -44,21 +44,21 @@ button {
     color: white;
 }
 
-button:hover {
-    background-color: #45a049;
-}
 
 .agregar {
     position: fixed;
     bottom: 20px;
     right: 20px;
-    background-color: #2196F3;
+    background-color: #44d448;
     font-size: 24px;
     border-radius: 50%;
     width: 50px;
     height: 50px;
     color: white;
     border: none;
+}
+button:hover {
+    background-color: #6b26c5;
 }
 
 .modal {
@@ -92,8 +92,9 @@ button:hover {
 body{
     background-color: #333;
 }
-.wer{
-    background-color: #2196F3;
+.EnC{
+    background-color:#44d448;
+    border-radius: 20px;
 }
 .encuestas {
     display: flex;
@@ -144,10 +145,11 @@ body {
     color: rgb(255, 255, 255);
 }
 
-header {
+.EnD {
     display: flex;
     padding: 10px;
-    background-color: #2196F3;
+    background-color:#6b26c5;
+    border-radius: 20px;
 }
 
 main {

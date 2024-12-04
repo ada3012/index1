@@ -1,5 +1,5 @@
 const modal = document.getElementById('modal');
-const btnAbrirModal = document.getElementById('btnAbrirModal');
+const agregar = document.getElementById('agregar');
 const btnCerrarModal = document.getElementById('btnCerrarModal');
 const btnAgregarPregunta = document.getElementById('agregarPregunta');
 const btnGuardarEncuesta = document.getElementById('guardarEncuesta');
@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', () => {
     crearBotonHome(); 
 });
 
-btnAbrirModal.addEventListener('click', () => {
+agregar.addEventListener('click', () => {
     modal.style.display = 'flex';
 });
 
@@ -220,11 +220,9 @@ function actualizarEncuesta(nuevaEncuesta) {
     const index = encuestasGuardadas.findIndex(e => e.nombre === encuestaEditando.nombre);
 
     if (index !== -1) {
-        // Actualizar la encuesta en el almacenamiento
         encuestasGuardadas[index] = nuevaEncuesta;
         localStorage.setItem('encuestas', JSON.stringify(encuestasGuardadas));
 
-        // Actualizar la encuesta en el DOM
         const encuestaDiv = Array.from(encuestasContainer.children).find(div =>
             div.querySelector('h3').textContent === encuestaEditando.nombre
         );
@@ -232,13 +230,12 @@ function actualizarEncuesta(nuevaEncuesta) {
             encuestaDiv.querySelector('h3').textContent = nuevaEncuesta.nombre;
         }
 
-        // Recargar la página automáticamente después de actualizar
         setTimeout(() => {
             location.reload();
-        }, 100); // Agrega un pequeño retraso para asegurar que la actualización se complete antes del refresh
+        }, 100);
     }
 
-    encuestaEditando = null; // Limpiar el estado de edición
+    encuestaEditando = null;
 }
 
 function eliminarEncuesta(encuesta, div) {
